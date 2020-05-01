@@ -1,0 +1,337 @@
+:root {
+  font-size: 16px !important; 
+  font-family: 'Open Sans' !important;
+  --text-primary: white !important;
+  --text-secondary: #ececec !important;
+  --bg-primary: rgba(0, 135, 202) !important;
+  --bg-secondary: linear-gradient(-90deg, transparent,black);
+  --transition-speed: 600ms !important;
+}
+
+body {
+  color: black !important;
+  
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+body::-webkit-scrollbar {
+  width: 0.25rem !important;
+}
+
+body::-webkit-scrollbar-track {
+  background: #1e1e24 !important;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #0085CA !important;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+main {
+  margin-left: 5rem !important;
+  padding: 1rem !important;
+}
+
+.navbar {
+  margin: 0 !important;
+  padding: 0 !important;
+  position: fixed !important;
+  background-color: var(--bg-primary) !important;
+  transition: width 600ms ease !important;
+  overflow: hidden !important;
+}
+
+.navbar-nav {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  height: 100% !important;
+}
+
+.nav-item {
+  width: 100% !important;
+}
+
+.nav-item:last-child {
+  margin-top: auto !important;
+  margin-bottom: 50px !important;
+}
+
+.nav-link {
+  display: flex !important;
+  align-items: center !important;
+  height: 5rem !important;
+  color: var(--text-primary) !important;
+  text-decoration: none !important;
+  filter: grayscale(100%) opacity(0.7) !important;
+  transition: var(--transition-speed) !important;
+}
+
+.nav-link:hover {
+  filter: grayscale(0%) opacity(1) !important;
+  background: var(--bg-secondary) !important;
+  color: var(--text-secondary) !important;
+}
+
+.link-text {
+  display: none !important;
+  margin-left: 1rem !important;
+}
+
+.nav-link svg {
+  width: 2rem !important;
+  min-width: 2rem !important;
+  margin: 0 1.5rem !important;
+}
+
+.fa-primary {
+  color: #0085CA !important;
+}
+
+.fa-secondary {
+  color: rgb(0, 135, 202) !important;
+}
+
+.fa-primary,
+.fa-secondary {
+  transition: var(--transition-speed) !important;
+}
+
+.logo {
+  
+  font-weight: bold !important;
+  text-transform: uppercase !important;
+  margin-bottom: 1rem !important;
+  text-align: center !important;
+  color: var(--text-secondary) !important;
+  background: var(--bg-secondary) !important;
+  font-size: 1.5rem !important;
+  letter-spacing: 0.3ch !important;
+  width: 100% !important;
+}
+
+.logo svg {
+  transform: rotate(0deg) !important;
+  transition: var(--transition-speed) !important;
+}
+
+.logo-text
+{
+  display: inline !important;
+  position: absolute !important;
+  left: -999px !important;
+  transition: var(--transition-speed) !important;
+}
+
+.navbar:hover .logo svg {
+  transform: rotate(-180deg) !important;
+}
+
+/* Small screens */
+@media only screen and (max-width: 600px) {
+  .navbar {
+    bottom: 0 !important;
+    width: 100vw !important;
+    height: 5rem !important;
+  }
+
+  .logo {
+    display: none !important;
+  }
+
+  .navbar-nav {
+    flex-direction: row !important;
+  }
+
+  .nav-link {
+    justify-content: center !important;
+  }
+
+  main {
+    margin: 0 !important;
+  }
+}
+
+/* Large screens */
+@media only screen and (min-width: 600px) {
+  .navbar {
+    top: 0 !important;
+    width: 5rem !important;
+    height: 100vh !important;
+  }
+
+  .navbar:hover {
+    width: 16rem !important;
+  }
+
+  .navbar:hover .link-text {
+    display: inline !important;
+  }
+
+  .navbar:hover .logo svg
+  {
+    margin-left: 11rem !important;
+  }
+
+  .navbar:hover .logo-text
+  {
+    left: 0px !important;
+  }
+}
+
+.aboutme{
+  margin: 100px;
+}
+h1.aboutmeH1{
+  margin: 25px;
+}
+.row{
+  padding: 20px;
+  justify-content: space-around;
+}
+.gradient {
+	border-top: 5px solid rgb(0, 135, 202)k;
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgb(0, 135, 202)), to(transparent));
+	background-image: -webkit-linear-gradient(rgb(0, 135, 202), transparent);
+	background-image:
+		-moz-linear-gradient(rgb(0, 135, 202), transparent),
+		-moz-linear-gradient(rgb(0, 135, 202), transparent);
+	background-image:
+		-o-linear-gradient(rgb(0, 135, 202), transparent),
+		-o-linear-gradient(rgb(0, 135, 202), transparent);
+	background-image: 
+		linear-gradient(rgb(0, 135, 202), transparent),
+		linear-gradient(rgb(0, 135, 202), transparent);
+	-moz-background-size: 3px 100%;
+	background-size: 2px 100%;
+	background-position: 0 0, 100% 0;
+	background-repeat: no-repeat; 
+  }
+
+  .mcimg{
+    justify-content: center;
+    display: inline-block;
+    margin: 75px;
+    width: 500px;
+    
+  }
+
+.img-fluid{
+  margin: 25px;
+  border-radius: 100px;
+  width: 225px;
+  
+}
+
+.box {
+  transition: all 500ms ease;
+  flex: 1;
+  margin: 20px;
+  justify-content: center;
+}
+
+.row-start {
+  clear: left;
+}
+
+.box.active {
+  border-radius: 0px;
+  flex: 5;
+}
+.active.img-fluid{
+border-radius: 0px;
+width: 500px;
+}
+
+.box.shrink {
+  width: 400px;
+}
+#colorchange{
+  -webkit-animation: color-change 3s infinite;
+        -moz-animation: color-change 3s infinite;
+        -o-animation: color-change 3s infinite;
+        -ms-animation: color-change 3s infinite;
+        animation: color-change 3s infinite;
+}
+@-webkit-keyframes color-change {
+  0% { color:rgb(0, 135, 202) }
+  50% { color: #000000 }
+  100% { color: rgb(0, 135, 202) }
+}
+@-moz-keyframes color-change {
+  0% { color: rgb(0, 135, 202) }
+  50% { color: #000000 }
+  100% { color: rgb(0, 135, 202) }
+}
+@-ms-keyframes color-change {
+  0% { color: rgb(0, 135, 202) }
+  50% { color: #000000 }
+  100% { color: rgb(0, 135, 202) }
+}
+@-o-keyframes color-change {
+  0% { color: rgb(0, 135, 202) }
+  50% { color: #000000 }
+  100% { color: rgb(0, 135, 202) }
+}
+@keyframes color-change {
+  0% { color: rgb(0, 135, 202) }
+  50% { color: #000000 }
+  100% { color: rgb(0, 135, 202) }
+}
+
+.btn{
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgb(158, 242, 248)), to(transparent));
+  background-image: -webkit-linear-gradient(rgb(158, 242, 248), transparent);
+  
+}
+
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side */
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-box-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
