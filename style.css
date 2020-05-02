@@ -183,74 +183,19 @@ main {
     left: 0px !important;
   }
 }
-
-.aboutme{
-  margin: 100px;
-}
-h1.aboutmeH1{
-  margin: 25px;
+.gradient{
+  padding: 5px;
+  border-bottom: 2px solid;
+  border-image: linear-gradient(90deg, rgb(0, 135, 202), rgba(0, 135, 202,0),rgb(0, 135, 202)) 1;
 }
 .row{
   padding: 20px;
   justify-content: space-around;
 }
-.gradient {
-	border-top: 5px solid rgb(0, 135, 202)k;
-	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgb(0, 135, 202)), to(transparent));
-	background-image: -webkit-linear-gradient(rgb(0, 135, 202), transparent);
-	background-image:
-		-moz-linear-gradient(rgb(0, 135, 202), transparent),
-		-moz-linear-gradient(rgb(0, 135, 202), transparent);
-	background-image:
-		-o-linear-gradient(rgb(0, 135, 202), transparent),
-		-o-linear-gradient(rgb(0, 135, 202), transparent);
-	background-image: 
-		linear-gradient(rgb(0, 135, 202), transparent),
-		linear-gradient(rgb(0, 135, 202), transparent);
-	-moz-background-size: 3px 100%;
-	background-size: 2px 100%;
-	background-position: 0 0, 100% 0;
-	background-repeat: no-repeat; 
-  }
-
-  .mcimg{
-    justify-content: center;
-    display: inline-block;
-    margin: 75px;
-    width: 500px;
-    
-  }
-
-.img-fluid{
-  margin: 25px;
-  border-radius: 100px;
-  width: 225px;
-  
+.boxshadow{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.box {
-  transition: all 500ms ease;
-  flex: 1;
-  margin: 20px;
-  justify-content: center;
-}
-
-.row-start {
-  clear: left;
-}
-
-.box.active {
-  border-radius: 0px;
-  flex: 5;
-}
-.active.img-fluid{
-border-radius: 0px;
-width: 500px;
-}
-
-.box.shrink {
-  width: 400px;
-}
 #colorchange{
   -webkit-animation: color-change 3s infinite;
         -moz-animation: color-change 3s infinite;
