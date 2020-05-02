@@ -10,7 +10,6 @@
 
 body {
   color: black !important;
-  
   margin: 0 !important;
   padding: 0 !important;
 }
@@ -95,7 +94,7 @@ main {
 }
 
 .fa-secondary {
-  color: rgb(0, 135, 202) !important;
+  color: rgb(96, 170, 207) !important;
 }
 
 .fa-primary,
@@ -337,11 +336,9 @@ width: 500px;
 }
 
 canvas{
-  background-color: -webkit-linear-gradient(rgb(60, 123, 155), transparent);
   position: absolute;
 	top: 0;
   z-index: -1;
   width: fit-content;
- 
   opacity: .8;
 }

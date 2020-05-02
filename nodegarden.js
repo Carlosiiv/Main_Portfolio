@@ -174,10 +174,10 @@
     NodeGarden.prototype.toggleNightMode = function toggleNightMode () {
       this.nightMode = !this.nightMode;
       if (this.nightMode) {
-        this.ctx.fillStyle = '#0085CA';
+        this.ctx.fillStyle = '#ffffff';
         document.body.classList.add('nightmode');
       } else {
-        this.ctx.fillStyle = '#0085CA';
+        this.ctx.fillStyle = '#000000';
         document.body.classList.remove('nightmode');
       }
     };
@@ -239,9 +239,9 @@
           // draw gravity lines
           this$1.ctx.beginPath();
           if (this$1.nightMode) {
-            this$1.ctx.strokeStyle = 'rgba(16,24,32,' + (opacity < 1 ? opacity : 1) + ')';
+            this$1.ctx.strokeStyle = 'rgba(191,191,191,' + (opacity < 1 ? opacity : 1) + ')';
           } else {
-            this$1.ctx.strokeStyle = 'rgba(16,24,32' + (opacity < 1 ? opacity : 1) + ')';
+            this$1.ctx.strokeStyle = 'rgba(63,63,63,' + (opacity < 1 ? opacity : 1) + ')';
           }
           this$1.ctx.moveTo(nodeA.x, nodeA.y);
           this$1.ctx.lineTo(nodeB.x, nodeB.y);
