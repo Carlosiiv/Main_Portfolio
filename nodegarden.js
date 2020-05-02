@@ -174,7 +174,7 @@
     NodeGarden.prototype.toggleNightMode = function toggleNightMode () {
       this.nightMode = !this.nightMode;
       if (this.nightMode) {
-        this.ctx.fillStyle = '#ffffff';
+        this.ctx.fillStyle = '#000000';
         document.body.classList.add('nightmode');
       } else {
         this.ctx.fillStyle = '#000000';
@@ -239,7 +239,7 @@
           // draw gravity lines
           this$1.ctx.beginPath();
           if (this$1.nightMode) {
-            this$1.ctx.strokeStyle = 'rgba(191,191,191,' + (opacity < 1 ? opacity : 1) + ')';
+            this$1.ctx.strokeStyle = 'rgba(63,63,63,' + (opacity < 1 ? opacity : 1) + ')';
           } else {
             this$1.ctx.strokeStyle = 'rgba(63,63,63,' + (opacity < 1 ? opacity : 1) + ')';
           }
